@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <title>FriendFinder</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--chosen-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
 
@@ -16,7 +20,7 @@
 <body>
 
   <div class="container">
-    <h2>Survey Questions</h2>
+    <h2>Which Friend's Character Are You?</h2>
     <hr>
 
     <h3><strong>About You</strong></h3>
@@ -29,113 +33,113 @@
     <hr>
 
     <h3><strong>Question 1</strong></h3>
-    <h4>Your mind is always buzzing with explored ideas and plans</h4>
+    <h4>Which of the following best describes your sibling situation?</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="1">I have one sibling that is my greatest rival</option>
+        <option value="2">I have a couple siblings I don't get along with so well</option>
+        <option value="3">I have multiple siblings and I love them all</option>
+        <option value="4">I have one sibling that drives be CRAZY but is one of my best friends</option>
+        <option value="5">I'm an only child</option>
     </select>
 
     <h3><strong>Question 2</strong></h3>
-    <h4>Generally speaking, you rely more on your experience than your imagination</h4>
+    <h4>Which of the following sound most appealing to you?</h4>
     <select data-placeholder="" class="chosen-select" id="q2">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">Shopping</option>
+            <option value="2">Cooking or cleaning</option>
+            <option value="3">Eating</option>
+            <option value="4">Relaxing on the couch watching TV</option>
+            <option value="5">Visiting a museum</option>
     </select>
 
     <h3><strong>Question 3</strong></h3>
-    <h4>You find it easy to stay relaxed and focused even when there is some pressure</h4>
+    <h4>Which of the following describes your dreams for the future</h4>
     <select data-placeholder="" class="chosen-select" id="q3">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">I have no idea</option>
+            <option value="2">Making it big</option>
+            <option value="3">Marrying and having a family</option>
+            <option value="4">Ending up with my true love</option>
+            <option value="5">To be happy and care-free</option>
     </select>
 
     <h3><strong>Question 4</strong></h3>
-    <h4>Your rarely do something just out of sheer curiousity</h4>
+    <h4>Which of the following describes your greatest attribute?</h4>
     <select data-placeholder="" class="chosen-select" id="q4">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">My intelligence</option>
+            <option value="2">My morals</option>
+            <option value="3">My way with the ladies/guys</option>
+            <option value="4">My strong will</option>
+            <option value="5">My appearance</option>
     </select>
 
     <h3><strong>Question 5</strong></h3>
-    <h4>People can rarely upset you</h4>
+    <h4>What would you consider to be your worst attribute?</h4>
      <select data-placeholder="" class="chosen-select" id="q5">
         <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
+        <option value="1">I'm socially awkward</option>
+        <option value="2">I'm too sensitive</option>
+        <option value="3">I'm obsessive</option>
+        <option value="4">I'm too submissive</option>
+        <option value="5">I'm a total pushover</option>
     </select>
 
     <h3><strong>Question 6</strong></h3>
-    <h4>It is often difficult for you to relate to other people's feelings</h4>
+    <h4>You just found out your best friend and sibling are dating, how do you react?</h4>
     <select data-placeholder="" class="chosen-select" id="q6">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">I'm super excited!</option>
+            <option value="2">I give my friend 'the talk'</option>
+            <option value="3">I'm protective of my sibling</option>
+            <option value="4">EW! Why would they date my sibling?</option>
+            <option value="5">I don't have a sibling</option>
     </select>
 
     <h3><strong>Question 7</strong></h3>
-    <h4>In a discussion, truth should be more important than people's sensitviites</h4>
+    <h4>In school, which group did you belong in?</h4>
     <select data-placeholder="" class="chosen-select" id="q7">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">Popular</option>
+            <option value="2">Nerdy</option>
+            <option value="3">Jocks</option>
+            <option value="4">Complete Outcast</option>
+            <option value="5">I didn't get to go to school</option>
     </select>
 
     <h3><strong>Question 8</strong></h3>
-    <h4>You rarely get carried away by fantasies and ideas</h4>
+    <h4>Which of the following do you value the most?</h4>
     <select data-placeholder="" class="chosen-select" id="q8">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">Your friends</option>
+            <option value="2">Your relationship</option>
+            <option value="3">Your morals</option>
+            <option value="4">Your work</option>
+            <option value="5">Your family</option>
     </select>
 
     <h3><strong>Question 9</strong></h3>
-    <h4>You think that everyone's views should be respected regardless of whether they are supported by facts or not</h4>
+    <h4>In a team project, which role would you most likely take?</h4>
     <select data-placeholder="" class="chosen-select" id="q9">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">Sitting back and watching</option>
+            <option value="2">Giving ideas/creativity</option>
+            <option value="3">Information Seeker</option>
+            <option value="4">Team leader</option>
+            <option value="5">Dealing with the numbers</option>
     </select>
 
     <h3><strong>Question 10</strong></h3>
-    <h4>You feel more energetic after spending time with a group of people</h4>
+    <h4>What attracts you the most in a significant other?</h4>
     <select data-placeholder="" class="chosen-select" id="q10">
             <option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="1">Their intelligence</option>
+            <option value="2">Their appearance</option>
+            <option value="3">Their loyalty</option>
+            <option value="4">Their sense of humor</option>
+            <option value="5">Sexual chemistry</option>
     </select>
 
     <br>
@@ -169,9 +173,7 @@
                 </div>
         </div>
   </div>
-</body>
 
-</html>
 
 
 <script type="text/javascript">
@@ -235,3 +237,7 @@ $("#submit").on("click", function() {
 })
 
 </script>
+
+</body>
+
+</html>
