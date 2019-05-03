@@ -1,4 +1,4 @@
-var friends = require("../data/friends.js");
+var friends = require("../data/friends");
 
 module.exports = function (app) {
     
@@ -41,6 +41,7 @@ module.exports = function (app) {
             }
         }
         
+        //push new user into friend array
         friends.push(userData);
 
         res.json(bestMatch);

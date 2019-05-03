@@ -242,6 +242,7 @@ $("#submit").on("click", function() {
                         ]
                 };
 
+                //grab the current URL of the website
                 var currentURL = window.location.origin;
 
                 $.post(currentURL + "/api/friends", userData, function(data) {
