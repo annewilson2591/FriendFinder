@@ -16,33 +16,35 @@ module.exports = function (app) {
 
         console.log(req.body);
 
-        var userData = req.body;
-        var userScores = userData.scores;
-
-        console.log(userScores);
-
-        var totalDifference = 0;
-
-        for (var i = 0; i < friends.length; i++) {
+        var user = req.body;
+        var userScores = user.scores;
             
-            console.log(friends[i]);
-            totalDifference = 0;
+            friends.forEach((friend) => {
+                console.log(friend, "friend");
+                
+                var totalDifference = 0;
+    
+                    friend.scores.forEach((friendScore, index) => {
 
-            for (var j = 0; j < friends[i].scores[j]; j++) {
+                        totalDifference += Math.abs(parseInt(userScores[index]) - parseInt(friendScore[index]));
+    
+                        if (totalDifference <= bestMatch.friendDifference) {
+    
+                            bestMatch.name = friend.name;
+                            bestMatch.photo = friend.photo;
+                            bestMatch.friendDifference = totalDifference;
+                    }
+                    });
+                    
+            });
 
-                totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+        console.log('userScores', userScores);
 
-                if (totalDifference <= bestMatch.friendDifference) {
+        
 
-                    bestMatch.name = friends[i].name;
-                    bestMatch.photo = friends[i].photo;
-                    bestMatch.friendDifference = totalDifference;
-                }
-            }
-        }
         
         //push new user into friend array
-        friends.push(userData);
+        friends.push(user);
 
         res.json(bestMatch);
     });
