@@ -1,7 +1,7 @@
 var friends = [
     {
         name: "Rachel",
-        photo: "../images/Rachel.jpg",
+        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjYjJn1g73iAhXpiFQKHX-9CTsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw1TR5g9Mwps6sBnBA-d169b&ust=1559091857053520",
         scores: [
             "1",
             "1",
@@ -17,7 +17,7 @@ var friends = [
     },
     {
         name: "Monica",
-        photo: "../images/Monica.jpg",
+        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjYjJn1g73iAhXpiFQKHX-9CTsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw1TR5g9Mwps6sBnBA-d169b&ust=1559091857053520",
         scores: [
             "2",
             "2",
@@ -33,7 +33,7 @@ var friends = [
     },
     {
         name: "Pheobe",
-        photo: "../images/Phoebe.jpg",
+        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjYjJn1g73iAhXpiFQKHX-9CTsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw1TR5g9Mwps6sBnBA-d169b&ust=1559091857053520",
         scores: [
             "3",
             "3",
@@ -49,7 +49,7 @@ var friends = [
     },
     {
         name: "Ross",
-        photo: "../images/Ross.jpg",
+        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjYjJn1g73iAhXpiFQKHX-9CTsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw1TR5g9Mwps6sBnBA-d169b&ust=1559091857053520",
         scores: [
             "4",
             "4",
@@ -65,7 +65,7 @@ var friends = [
     },
     {
         name: "Joey",
-        photo: "../images/JoeyTribbiani.jpg",
+        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjYjJn1g73iAhXpiFQKHX-9CTsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw1TR5g9Mwps6sBnBA-d169b&ust=1559091857053520",
         scores: [
             "5",
             "5",
@@ -81,7 +81,7 @@ var friends = [
     },
     {
         name: "Chandler",
-        photo: "../images/Chandler.jpg",
+        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjYjJn1g73iAhXpiFQKHX-9CTsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw1TR5g9Mwps6sBnBA-d169b&ust=1559091857053520",
         scores: [
             "1",
             "1",

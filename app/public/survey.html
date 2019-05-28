@@ -2,261 +2,241 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>FriendFinder</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  <!--font awesome-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <!--chosen-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <title>FriendFinder - Survey</title>
+        <!-- materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <!-- materialize icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
 </head>
 
 <body>
 
-  <div class="container">
-    <h2>Survey Questions</h2>
-    <hr>
+        <div class="container">
+                <div class='card-panel teal lighten-2 col s12 center-align'>
+                        <h4><strong>Survey Questions</strong></h4>
+                        <div class='card-panel left-align white'>
+                                <h5><strong>About You</strong></h5>
+                                <br>
+                                <input id="name" type="text" class="validate" required>
+                                <label class='active' for="name">Name (required)</label>
+                                <input id="photo" type="text" class="validate" required>
+                                <label class='active' for="name">Link to Photo Image (required)</label>
 
-    <h3><strong>About You</strong></h3>
-    <h4>Name (Required)</h4>
-    <input type="text" name="" id="name" class="form-control" required>
+                                <h5><strong>Question 1</strong></h5>
+                                <p>Which of the following best describes your sibling situation?</p>
+                                <select data-placeholder="" class="browser-default" id="q1">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">I have one sibling that is my greatest rival</option>
+                                        <option value="2">I have a couple siblings I don't get along with so well
+                                        </option>
+                                        <option value="3">I have multiple siblings and I love them all</option>
+                                        <option value="4">I have one sibling that drives be CRAZY but is one of my best friends</option>
+                                        <option value="5">I'm an only child</option>
+                                </select>
 
-    <h4>Link to Photo Image (Required)</h4>
-    <input type="text" name="" id="photo" class="form-control" required>
+                                <h5><strong>Question 2</strong></h5>
+                                <p>Which of the following sound most appealing to you?</p>
+                                <select data-placeholder="" class="browser-default" id="q2">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">Shopping</option>
+                                        <option value="2">Cooking or cleaning</option>
+                                        <option value="3">Eating</option>
+                                        <option value="4">Relaxing on the couch watching TV</option>
+                                        <option value="5">Visiting a museum</option>
+                                </select>
 
-    <hr>
+                                <h5><strong>Question 3</strong></h5>
+                                <p>Which of the following describes your dreams for the future</p>
+                                <select data-placeholder="" class="browser-default" id="q3">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">I have no idea</option>
+                                        <option value="2">Making it big</option>
+                                        <option value="3">Marrying and having a family</option>
+                                        <option value="4">Ending up with my true love</option>
+                                        <option value="5">To be happy and care-free</option>
+                                </select>
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>Which of the following best describes your sibling situation?</h4>
-    <select data-placeholder="" class="chosen-select" id="q1">
-        <option value=""></option>
-        <option value="1">I have one sibling that is my greatest rival</option>
-        <option value="2">I have a couple siblings I don't get along with so well</option>
-        <option value="3">I have multiple siblings and I love them all</option>
-        <option value="4">I have one sibling that drives be CRAZY but is one of my best friends</option>
-        <option value="5">I'm an only child</option>
-    </select>
+                                <h5><strong>Question 4</strong></h5>
+                                <p>Which of the following describes your greatest attribute?</p>
+                                <select data-placeholder="" class="browser-default" id="q4">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">My intelligence</option>
+                                        <option value="2">My morals</option>
+                                        <option value="3">My way with the ladies/guys</option>
+                                        <option value="4">My strong will</option>
+                                        <option value="5">My appearance</option>
+                                </select>
 
-    <br>
+                                <h5><strong>Question 5</strong></h5>
+                                <p>What would you consider to be your worst attribute?</p>
+                                <select data-placeholder="" class="browser-default" id="q5">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">I'm socially awkward</option>
+                                        <option value="2">I'm too sensitive</option>
+                                        <option value="3">I'm obsessive</option>
+                                        <option value="4">I'm too submissive</option>
+                                        <option value="5">I'm a total pushover</option>
+                                </select>
 
-    <h3><strong>Question 2</strong></h3>
-    <h4>Which of the following sound most appealing to you?</h4>
-    <select data-placeholder="" class="chosen-select" id="q2">
-            <option value=""></option>
-            <option value="1">Shopping</option>
-            <option value="2">Cooking or cleaning</option>
-            <option value="3">Eating</option>
-            <option value="4">Relaxing on the couch watching TV</option>
-            <option value="5">Visiting a museum</option>
-    </select>
+                                <h5><strong>Question 6</strong></h5>
+                                <p>You just found out your best friend and sibling are dating, how do you react?</p>
+                                <select data-placeholder="" class="browser-default" id="q6">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">I'm super excited!</option>
+                                        <option value="2">I give my friend 'the talk'</option>
+                                        <option value="3">I'm protective of my sibling</option>
+                                        <option value="4">EW! Why would they date my sibling?</option>
+                                        <option value="5">I don't have a sibling</option>
+                                </select>
 
-    <br>
+                                <h5><strong>Question 7</strong></h5>
+                                <p>In school, which group did you belong in?</p>
+                                <select data-placeholder="" class="browser-default" id="q7">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">Popular</option>
+                                        <option value="2">Nerdy</option>
+                                        <option value="3">Jocks</option>
+                                        <option value="4">Complete Outcast</option>
+                                        <option value="5">I didn't get to go to school</option>
+                                </select>
 
-    <h3><strong>Question 3</strong></h3>
-    <h4>Which of the following describes your dreams for the future</h4>
-    <select data-placeholder="" class="chosen-select" id="q3">
-            <option value=""></option>
-            <option value="1">I have no idea</option>
-            <option value="2">Making it big</option>
-            <option value="3">Marrying and having a family</option>
-            <option value="4">Ending up with my true love</option>
-            <option value="5">To be happy and care-free</option>
-    </select>
+                                <h5><strong>Question 8</strong></h5>
+                                <p>Which of the following do you value the most?</p>
+                                <select data-placeholder="" class="browser-default" id="q8">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">Your friends</option>
+                                        <option value="2">Your relationship</option>
+                                        <option value="3">Your morals</option>
+                                        <option value="4">Your work</option>
+                                        <option value="5">Your family</option>
+                                </select>
 
-    <br>
+                                <h5><strong>Question 9</strong></h5>
+                                <p>In a team project, which role would you most likely take?</p>
+                                <select data-placeholder="" class="browser-default" id="q9">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">Sitting back and watching</option>
+                                        <option value="2">Giving ideas/creativity</option>
+                                        <option value="3">Information Seeker</option>
+                                        <option value="4">Team leader</option>
+                                        <option value="5">Dealing with the numbers</option>
+                                </select>
 
-    <h3><strong>Question 4</strong></h3>
-    <h4>Which of the following describes your greatest attribute?</h4>
-    <select data-placeholder="" class="chosen-select" id="q4">
-            <option value=""></option>
-            <option value="1">My intelligence</option>
-            <option value="2">My morals</option>
-            <option value="3">My way with the ladies/guys</option>
-            <option value="4">My strong will</option>
-            <option value="5">My appearance</option>
-    </select>
+                                <h5><strong>Question 10</strong></h5>
+                                <p>What attracts you the most in a significant other?</p>
+                                <select data-placeholder="" class="browser-default" id="q10">
+                                        <option value="">Choose an option</option>
+                                        <option value="1">Their intelligence</option>
+                                        <option value="2">Their appearance</option>
+                                        <option value="3">Their loyalty</option>
+                                        <option value="4">Their sense of humor</option>
+                                        <option value="5">Sexual chemistry</option>
+                                </select>
 
-    <br>
-    
-    <h3><strong>Question 5</strong></h3>
-    <h4>What would you consider to be your worst attribute?</h4>
-     <select data-placeholder="" class="chosen-select" id="q5">
-        <option value=""></option>
-        <option value="1">I'm socially awkward</option>
-        <option value="2">I'm too sensitive</option>
-        <option value="3">I'm obsessive</option>
-        <option value="4">I'm too submissive</option>
-        <option value="5">I'm a total pushover</option>
-    </select>
+                                <br>
+                                <br>
 
-    <br>
-
-    <h3><strong>Question 6</strong></h3>
-    <h4>You just found out your best friend and sibling are dating, how do you react?</h4>
-    <select data-placeholder="" class="chosen-select" id="q6">
-            <option value=""></option>
-            <option value="1">I'm super excited!</option>
-            <option value="2">I give my friend 'the talk'</option>
-            <option value="3">I'm protective of my sibling</option>
-            <option value="4">EW! Why would they date my sibling?</option>
-            <option value="5">I don't have a sibling</option>
-    </select>
-
-    <br>
-
-    <h3><strong>Question 7</strong></h3>
-    <h4>In school, which group did you belong in?</h4>
-    <select data-placeholder="" class="chosen-select" id="q7">
-            <option value=""></option>
-            <option value="1">Popular</option>
-            <option value="2">Nerdy</option>
-            <option value="3">Jocks</option>
-            <option value="4">Complete Outcast</option>
-            <option value="5">I didn't get to go to school</option>
-    </select>
-
-    <br>
-
-    <h3><strong>Question 8</strong></h3>
-    <h4>Which of the following do you value the most?</h4>
-    <select data-placeholder="" class="chosen-select" id="q8">
-            <option value=""></option>
-            <option value="1">Your friends</option>
-            <option value="2">Your relationship</option>
-            <option value="3">Your morals</option>
-            <option value="4">Your work</option>
-            <option value="5">Your family</option>
-    </select>
-
-    <br>
-
-    <h3><strong>Question 9</strong></h3>
-    <h4>In a team project, which role would you most likely take?</h4>
-    <select data-placeholder="" class="chosen-select" id="q9">
-            <option value=""></option>
-            <option value="1">Sitting back and watching</option>
-            <option value="2">Giving ideas/creativity</option>
-            <option value="3">Information Seeker</option>
-            <option value="4">Team leader</option>
-            <option value="5">Dealing with the numbers</option>
-    </select>
-
-    <br>
-    
-    <h3><strong>Question 10</strong></h3>
-    <h4>What attracts you the most in a significant other?</h4>
-    <select data-placeholder="" class="chosen-select" id="q10">
-            <option value=""></option>
-            <option value="1">Their intelligence</option>
-            <option value="2">Their appearance</option>
-            <option value="3">Their loyalty</option>
-            <option value="4">Their sense of humor</option>
-            <option value="5">Sexual chemistry</option>
-    </select>
-
-    <br>
-    <br>
-
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
-
-    <hr>
-
-    <footer class="footer">
-      <div class="container">
-          <p><a href="#">API Friends List</a> | <a href="#">GitHub Repo></a></p>
-      </div>
-    </footer>
-  </div>
-
-  <div id="resultsModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-                <div class="modal-content">
-                   <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2 class="modal-title"><strong>Best Match</strong></h2>
-                   </div>
-                   <div class="modal-body">
-                        <h2 id="matchName"></h2>
-                        <img id="matchImg" src="https://via.placeholder.com/150" alt="">
-                   </div>
-                   <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                   </div>
+                                <!-- Materialize Modal Trigger/Submit Button -->
+                                <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+                        </div>
                 </div>
-        </div>
-  </div>
+                <div class='col s4'>
+                        <p><a href='/api/friends'>API Friends List</a> | <a href='https://annewilson2591.github.io/FriendFinder/' target='_blank'>GitHub Repo</a></p>
+                </div>
+
+                <!-- Materialize Modal  -->
+                <div id="modal1" class="modal yellow darken-1">
+                        <div class="modal-content">
+                          <h4>Best 'Friend' Match</h4>
+                          <h5 id="matchName"></h5>
+                          <img id="matchPic" src="" alt="No Image" width = 250px>
+                        </div>
+                      <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+                      </div>
+                    </div>
+              
+                </div>
 
 
 
-<script type="text/javascript">
+                        <script type="text/javascript">
+                        $(document).ready(function() {
+                                $("#submitBtn").on("click", function() {
+                                        //form validation
+                                        function validateForm() {
+                                        var isValid = true;
+                                        $('.validate').each(function() {
+                                                if ($(this).val() === ''){
+                                                isValid = false;
+                                                }
+                                        });
+                                                        
+                                        $('.browser-default').each(function() {
+                                                if ($(this).val() === ""){
+                                                isValid = false;
+                                                }
+                                        });
+                                        return isValid;
+                                        }
 
-//chosen CSS
-var config = {
-        ".chosen-select": {},
-        ".chosen-select-deselect": { allow_single_deselect: true },
-        ".chosen-select-no-single": { disable_search_threshold: 10 },
-        ".chosen-select-no-results": { no_results_text: "Oops, nothing found!" },
-        ".chosen-select-width": { width: "95%" }
-};
+                                        if (validateForm() == true) {
+                                                var userData = {
+                                                        name: $("#name").val(),
+                                                        friendPic: $("#photo").val().trim(),
+                                                        scores: [
+                                                                $("#q1").val(),
+                                                                $("#q2").val(),
+                                                                $("#q3").val(),
+                                                                $("#q4").val(),
+                                                                $("#q5").val(),
+                                                                $("#q6").val(),
+                                                                $("#q7").val(),
+                                                                $("#q8").val(),
+                                                                $("#q9").val(),
+                                                                $("#q10").val()
+                                                        ]
+                                                };
 
-$("#submit").on("click", function() {
-        
-        function validateForm() {
-                var isValid = true;
-                $(".form-control").each(function() {
-                        if($(this).val() === "") {
-                                isValid = false;
-                        }
-                });
+                                                //grab the current URL of the website
+                                                var currentURL = window.location.origin;
 
-                $(".chosen-select").each(function() {
-                        
-                        if ($(this).val() === "") {
-                                isValid = false;
-                        }
-                });
-                return isValid;
-        }
+                                                $.post(currentURL + "/api/friends", userData, function (data) {
 
-        if (validateForm()) {
-                var userData = {
-                        name: $("#name").val(),
-                        photo: $("#photo").val(),
-                        scores: [
-                                $("#q1").val(),
-                                $("#q2").val(),
-                                $("#q3").val(),
-                                $("#q4").val(),
-                                $("#q5").val(),
-                                $("#q6").val(),
-                                $("#q7").val(),
-                                $("#q8").val(),
-                                $("#q9").val(),
-                                $("#q10").val()
-                        ]
-                };
-
-                //grab the current URL of the website
-                var currentURL = window.location.origin;
-
-                $.post(currentURL + "/api/friends", userData, function(data) {
-                        
-                        $("#matchName").text(data.name);
-                        $("matchImg").attr("src", data.photo);
-                        
-                        $("#resultsModal").modal("toggle");
-                });
-        };
-})
-
-</script>
+                                                        $("#matchName").text(data.name);
+                                                        $("matchPic").attr("src", data.friendPic);
+                                                });
+                                                        //show modal with beset match
+                                                        $('.modal').modal();
+                                                
+                                                        //clear form after submission
+                                                        // $('#name').val("");
+                                                        // $('#photo').val("");
+                                                        // $('#q1').val("");
+                                                        // $('#q2').val("");
+                                                        // $('#q3').val("");
+                                                        // $('#q4').val("");
+                                                        // $('#q5').val("");
+                                                        // $('#q6').val("");
+                                                        // $('#q7').val("");
+                                                        // $('#q8').val("");
+                                                        // $('#q9').val("");
+                                                        // $('#q10').val("");
+                                        } else {
+                                                alert("Please fill out ALL fields before submitting")
+                                        }
+                                });
+                        });
+                        </script>
 
 </body>
-
 </html>
